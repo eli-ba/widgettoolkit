@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Fichiers sources">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Fichiers de ressources">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{d0670092-c023-4283-b52c-59ef33693194}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{0dae0123-1fcf-49c2-9ca6-f3923692c4ce}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\AppKit\appkit_export.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\AppKit\geometry.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\AppKit\targetver.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\AppKit\resources.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\AppKit\application.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\AppKit\AppKit.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\AppKit\utility.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\AppKit\window.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\AppKit\windowmanager.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\AppKit\basewindow.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\AppKit\constants.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\AppKit\keyevent.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\AppKit\keyeventreceiver.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\AppKit\mouseevent.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\AppKit\mouseeventreceiver.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\AppKit\inputevent.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\AppKit\windowinteractions.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\AppKit\view.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\AppKit\painter.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\AppKit\aktypes.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\AppKit\pushbutton.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\AppKit\textbox.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\AppKit\legacytools.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\AppKit\object.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\AppKit\listbox.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\AppKit\viewnotificationreceiver.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\AppKit\radiobutton.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\AppKit\label.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\AppKit\actionreceiver.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\AppKit\control.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\AppKit\messagebox.h">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\dllmain.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\geometry.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\resources.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\application.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utility.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\window.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\windowmanager.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\basewindow.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\keyevent.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mouseevent.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\inputevent.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\windowinteractions.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\view.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\aktypes.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pushbutton.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\textbox.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\legacytools.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\object.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\listbox.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\radiobutton.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\label.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\control.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\messagebox.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

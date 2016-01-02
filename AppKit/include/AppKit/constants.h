@@ -1,0 +1,28 @@
+#ifndef _CONSTANTS_H_
+#define _CONSTANTS_H_
+
+#define akWS_VISIBLE		1
+#define akWS_MAXIMIZABLE	2
+#define akWS_MINIMIZABLE	4
+#define akWS_CLOSABLE		8
+#define akWS_ACTIVE			16
+
+#define akINPUT_EVENT_MOUSE	1
+#define akINPUT_EVENT_KEY	2
+
+#define akMOUSE_EVENT_PRESS		1
+#define akMOUSE_EVENT_RELEASE	2
+#define akMOUSE_EVENT_MOVE		3
+#define akMOUSE_EVENT_DRAG		4
+#define akMOUSE_EVENT_WHEEL_UP	5
+#define akMOUSE_EVENT_WHEEL_DOWN 6
+
+#define akMOUSE_BUTTON_NONE		0
+#define akMOUSE_BUTTON_RIGHT	1
+#define akMOUSE_BUTTON_LEFT		2
+#define akMOUSE_BUTTON_MIDDLE	3
+
+#define akKEY_EVENT_PRESS	1
+#define akKEY_EVENT_RELEASE	2
+
+#endif
