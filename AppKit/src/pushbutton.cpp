@@ -2,7 +2,9 @@
 #include <AppKit/resources.h>
 #include <AppKit/window.h>
 #include <AppKit/legacytools.h>
+#ifdef _WIN32
 #include <Windows.h>
+#endif
 
 enum _akButtonState
 {

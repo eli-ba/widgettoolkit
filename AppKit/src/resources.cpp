@@ -1,7 +1,9 @@
 #include <AppKit/resources.h>
 #include <SDL_image.h>
 #include <stdio.h>
+#ifdef _WIN32
 #include <Windows.h>
+#endif
 #include <string.h>
 
 #define APPKIT_VISUAL_STYLE_PATH "appkit_data/resource/window/default/"
@@ -89,9 +91,13 @@ void Resources::LoadImageResources()
 	bool error = false;
 	for (int i=0; i<IMAGE_RESOURCE_COUNT; i++) {
 		if (!Images[i]) {
+#ifdef _WIN32
 			char *msg = new char[80];
 			sprintf_s(msg, strlen(msg), "Unable to load image resource %d", i);
 			MessageBox(NULL, msg, "Error", MB_OK);
+#else
+			printf("Unable to load image resource %d", i);
+#endif
 			error = true;
 		}
 	}
@@ -110,9 +116,13 @@ void Resources::LoadFontResources()
 	bool error = false;
 	for (int i=0; i<FONT_RESOURCE_COUNT; i++) {
 		if (!Fonts[i]) {
+#ifdef _WIN32
 			char *msg = new char[80];
 			sprintf_s(msg, strlen(msg), "Unable to load font resource %d", i);
 			MessageBox(NULL, msg, "Error", MB_OK);
+#else
+			printf("Unable to load font resource %d", i);
+#endif
 			error = true;
 		}
 	}
