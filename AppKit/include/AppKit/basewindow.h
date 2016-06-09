@@ -72,7 +72,6 @@ private:
 	bool mClosable;
 	bool mVisible;
 	bool mActive;
-	Uint32 mBgColor;
 	akRect mCloseButtonRect;
 	akRect mMinimizeButtonRect;
 	akRect mMaximizeButtonRect;
