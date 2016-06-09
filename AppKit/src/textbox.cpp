@@ -866,21 +866,21 @@ void TextBox_OnTextInput(TextBox *textbox, std::string text)
         SDL_FreeSurface(schar);
 }
 
-void TextBox_OnKeyDown(TextBox *textbox, int32_t _scancode, int32_t _keycode, int32_t _keymod)
+void TextBox_OnKeyDown(TextBox *textbox, int32_t scancode, int32_t keycode, int32_t keymod)
 {
 	SDL_Surface *schar=NULL;
 
 	if(!textbox->focus)
 		return;
 
-	if(_keycode == SDLK_BACKSPACE) // Backspace
+	if(keycode == SDLK_BACKSPACE)
 	{
 		TextBox_DeleteChar(textbox,0,0);
 		// To be updated
 		//MDDrawSurface(textbox->destSurface,textbox->destWindow,textbox->x,textbox->y,1);
 	}
 
-	switch(_keycode)
+	switch(keycode)
 	{
 	case SDLK_RIGHT:
 		TextBox_MoveCursorRight(textbox,0,0);

@@ -65,5 +65,5 @@ set (SOURCES
     )
 add_library (appkit SHARED ${SOURCES})
 
-target_link_libraries (appkit ${EXTRA_LIBS} ${SDL_LIBRARY} ${SDL_IMAGE_LIBRARY} ${SDL_TTF_LIBRARY} ${SDLMAIN_LIBRARY})
+target_link_libraries (appkit ${EXTRA_LIBS} ${SDL2_LIBRARY} ${SDL2_IMAGE_LIBRARY} ${SDL2_TTF_LIBRARY})
 #set_property(TARGET appkit PROPERTY CXX_STANDARD 11)
