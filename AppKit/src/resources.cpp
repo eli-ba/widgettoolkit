@@ -83,9 +83,9 @@ void Resources::LoadImageResources()
 	Images[SCROLLSURFACE] = IMG_Load(APPKIT_LISTBOX_RESOURCES_PATH"scrollsurface.png");
 
 	/* RadioButton */
-	Images[RADIOBUTTON_STATE1] = IMG_Load(APPKIT_BUTTON_RESOURCES_PATH"radiobutton_state1.PNG");
-	Images[RADIOBUTTON_STATE2] = IMG_Load(APPKIT_BUTTON_RESOURCES_PATH"radiobutton_state2.PNG");
-	Images[RADIOBUTTON_STATE3] = IMG_Load(APPKIT_BUTTON_RESOURCES_PATH"radiobutton_state3.PNG");
+	Images[RADIOBUTTON_STATE1] = IMG_Load(APPKIT_BUTTON_RESOURCES_PATH"radiobutton_state1.png");
+	Images[RADIOBUTTON_STATE2] = IMG_Load(APPKIT_BUTTON_RESOURCES_PATH"radiobutton_state2.png");
+	Images[RADIOBUTTON_STATE3] = IMG_Load(APPKIT_BUTTON_RESOURCES_PATH"radiobutton_state3.png");
 
 	// Check
 	bool error = false;

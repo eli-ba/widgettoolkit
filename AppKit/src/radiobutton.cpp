@@ -143,8 +143,7 @@ void akRadioButton::TextInput(akView* sender, akKeyEvent *event)
 void akRadioButton::Paint(akView *view, SDL_Surface *destination)
 {
 	SDL_Color black_color = {0,0,0};
-	SDL_Surface *surf = NULL,*text=NULL, *nw=NULL, *ne=NULL, 
-		*sw=NULL, *se=NULL, *n=NULL, *s=NULL ,*w=NULL, *e=NULL, *img=NULL;
+	SDL_Surface *surf = NULL,*text=NULL,*img=NULL;
 	akRect viewRect = GetRect();
 	int x = viewRect.location.x;
 	int y = viewRect.location.y;

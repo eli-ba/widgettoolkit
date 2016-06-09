@@ -859,7 +859,7 @@ void ListBox_OnMouseButtonDown(ListBox *listbox, int mouse_x, int mouse_y)
 {
 	ListBox_ItemList *p, *r;
 	SDL_Rect ps;
-	int cTime=0,pTime=0,i=0,tik=0,stop=0;
+	int i=0;
 
 	listbox->focus = 1;
 	if(listbox->of)
@@ -1234,7 +1234,7 @@ int ListBox_GetNbItems(ListBox *listbox)
 int ListBox_RemoveItem(ListBox *listbox, int index)
 {
 	ListBox_ItemList *p,*r;
-	int i=0,j=0;
+    int i=0;
 	p = listbox->ItemList;
 	while ((p != NULL) && i< index)
 	{
@@ -1392,7 +1392,7 @@ void ListBox_SetItemBg(ListBox *listbox, int index,SDL_Surface *bg, int x, int y
 
 ListBox_ItemList * ListBox_GetSelectedItems(ListBox * listbox)
 {
-	ListBox_ItemList *p = NULL, *r = NULL, *q = NULL, *w, *end;
+	ListBox_ItemList *p = NULL, *r = NULL, *q = NULL, *w = NULL, *end = NULL;
 	
 	if((listbox->selStartItem == NULL) || (listbox->selEndItem == NULL))
 		return NULL;
@@ -1453,7 +1453,6 @@ ListBox_ItemList * ListBox_GetSelectedItems(ListBox * listbox)
 void ListBox_SetItemBg1(ListBox *listbox, ListBox_ItemList *p,SDL_Surface *bg, int x, int y)
 {
 	SDL_Rect r;
-	int i=0;
 
 	r.x = x;
 	r.y = y;
