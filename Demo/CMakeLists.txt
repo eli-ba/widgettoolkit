@@ -13,4 +13,4 @@ add_executable (demo widgets_example.cpp)
 #add_executable (demo demo.h demo.cpp ${OSX_SOURCES})
 
 target_link_libraries (demo appkit ${SDL2_LIBRARY} ${SDL2_IMAGE_LIBRARY} ${SDL2_TTF_LIBRARY} ${COCOA_LIBRARY})
-set_property(TARGET appkit PROPERTY CXX_STANDARD 11)
+set_property(TARGET demo PROPERTY CXX_STANDARD 11)
