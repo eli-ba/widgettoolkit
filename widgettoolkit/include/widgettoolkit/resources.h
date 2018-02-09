@@ -1,0 +1,86 @@
+#pragma once
+
+#include <SDL.h>
+#include <SDL_ttf.h>
+
+#define IMAGE_RESOURCE_COUNT 48
+#define FONT_RESOURCE_COUNT 1
+
+class Resources {
+public:
+    static void Load();
+    static void LoadImageResources();
+    static void LoadFontResources();
+    static SDL_Surface* GetImageResource(int id);
+    static TTF_Font* GetFontResource(int id);
+
+private:
+    static SDL_Surface* Images[IMAGE_RESOURCE_COUNT];
+    static TTF_Font* Fonts[FONT_RESOURCE_COUNT];
+    static bool ImageResourcesLoaded;
+    static bool FontResourcesLoaded;
+};
+
+enum ResourceType {
+    RESOURCE_TYPE_IMAGE,
+    RESOURCE_TYPE_FONT
+};
+
+enum ImageReourceID {
+    WIN_TITLE_BAR_RIGHT,
+    WIN_TITLE_BAR_LEFT,
+    WIN_TITLE_BAR_CENTER,
+    TOOLWIN_WIN_TITLE_BAR_RIGHT,
+    TOOLWIN_WIN_TITLE_BAR_LEFT,
+    TOOLWIN_WIN_TITLE_BAR_CENTER,
+    TOOLWIN_WIN_TITLE_BAR_RIGHT_INACTIVE,
+    TOOLWIN_WIN_TITLE_BAR_LEFT_INACTIVE,
+    TOOLWIN_WIN_TITLE_BAR_CENTER_INACTIVE,
+    TOOLWIN_CLS_BTN_PRESSED,
+    TOOLWIN_CLS_BTN_INACTIVE,
+    TOOLWIN_CLS_BTN,
+    RIGHT_CORNER,
+    RIGHT_BORDER,
+    RDC_BTN_PRESSED,
+    RDC_BTN,
+    MX_BTN_PRESSED,
+    MX_BTN,
+    MX_BTN_PRESSED_2,
+    MX_BTN_2,
+    MX_BTN_2_INACTIVE,
+    LEFT_CORNER,
+    LEFT_BORDER,
+    CLS_BTN_PRESSED,
+    CLS_BTN,
+    BOTTOM_BORDER,
+    RESIZE_RECT,
+    //Inactive elements
+    WIN_TITLE_BAR_RIGHT_INACTIVE,
+    WIN_TITLE_BAR_LEFT_INACTIVE,
+    WIN_TITLE_BAR_CENTER_INACTIVE,
+    RIGHT_BORDER_INACTIVE,
+    LEFT_BORDER_INACTIVE,
+    BOTTOM_BORDER_INACTIVE,
+    RIGHT_CORNER_INACTIVE,
+    LEFT_CORNER_INACTIVE,
+    CLS_BTN_INACTIVE,
+    MX_BTN_INACTIVE,
+    RDC_BTN_INACTIVE,
+    /* PushButton */
+    PUSHBUTTON_NORMAL,
+    PUSHBUTTON_PRESSED,
+    /* ListBox */
+    SCROLLBUTTON_UP,
+    SCROLLBUTTON_UP_PRESSED,
+    SCROLLBUTTON_DOWN,
+    SCROLLBUTTON_DOWN_PRESSED,
+    SCROLLSURFACE,
+    /* RadioButton */
+    RADIOBUTTON_STATE1,
+    RADIOBUTTON_STATE2,
+    RADIOBUTTON_STATE3
+};
+
+enum FontResourceID {
+    DEFAULT_FONT
+};
