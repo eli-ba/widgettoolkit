@@ -1,1 +1,2 @@
-![ScreenShot](https://raw.githubusercontent.com/anass-b/AppKit/master/screenshots/demo_screenshot.png)
+# Widget Toolkit - C/C++ and SDL based
+![](./docs/screenshot.png)
