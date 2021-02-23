@@ -1,2 +1,2 @@
 # C/C++ Widget Toolkit
-![](./docs/screenshot.png?)
+![](./docs/screenshot.png?v=2)
